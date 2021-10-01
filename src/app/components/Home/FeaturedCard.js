@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import '../../../assets/css/Featured.css';
+import {Link} from "react-router-dom";
 
 const FeaturedCard = () => {
     const [state] = useState({
@@ -27,10 +28,10 @@ const FeaturedCard = () => {
                         <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
                             sentence and probably just keep going until we run out of words.</p>
                         */}
-                        <a href="#" className="icon-link">
+                        <Link to="/" className="icon-link">
                             Call to action
                             <i className="bi bi-chevron-right" width="1em" height="1em"/>
-                        </a>
+                        </Link>
 
                         {/*
                         <div className="col-lg-6 col-xl-4 mb-5" key={id}>

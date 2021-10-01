@@ -8,7 +8,6 @@ import * as GoIcons from "react-icons/go";
 import SigninForm from "../components/ModalContet/SigninForm";
 import { connect } from "react-redux";
 import { getCart } from "../actions/cartAction";
-import Tooltip from "react-tooltip";
 
 const Navbar = (props) => {
     const {totalQuantity} = props;
@@ -62,7 +61,7 @@ const Navbar = (props) => {
 
     useEffect(() => {
         props.getCart();
-    },[]);
+    },[props]);
 
     return (
         <Fragment>

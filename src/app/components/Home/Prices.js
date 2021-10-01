@@ -1,4 +1,5 @@
 import React, {Fragment} from "react";
+import {Link} from "react-router-dom";
 
 const Prices = () => {
     return(
@@ -51,7 +52,7 @@ const Prices = () => {
                                 </li>
                             </ul>
                             <div className="d-grid">
-                                <a className="btn btn-outline-primary" href="#">Choose plan</a>
+                                <Link className="btn btn-outline-primary" to="/">Choose plan</Link>
                             </div>
                         </div>
                     </div>
@@ -102,7 +103,7 @@ const Prices = () => {
                                 </li>
                             </ul>
                             <div className="d-grid">
-                                <a className="btn btn-primary" href="#">Choose plan</a>
+                                <Link className="btn btn-primary" to="/">Choose plan</Link>
                             </div>
                         </div>
                     </div>
@@ -151,7 +152,7 @@ const Prices = () => {
                                 </li>
                             </ul>
                             <div className="d-grid">
-                                <a className="btn btn-outline-primary" href="#">Choose plan</a>
+                                <Link className="btn btn-outline-primary" to="/">Choose plan</Link>
                             </div>
                         </div>
                     </div>

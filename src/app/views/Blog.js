@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import LayoutSite from "../layouts/LayoutSite";
 import '../../assets/css/Blog.css';
+import {Link} from "react-router-dom";
 
 const Blog = () => {
     const [state] = useState({
@@ -13,18 +14,18 @@ const Blog = () => {
                 <div className="container">
                     <div className="nav-scroller py-1 mb-2">
                         <nav className="nav d-flex justify-content-between">
-                            <a className="p-2 link-secondary" href="#">World</a>
-                            <a className="p-2 link-secondary" href="#">U.S.</a>
-                            <a className="p-2 link-secondary" href="#">Technology</a>
-                            <a className="p-2 link-secondary" href="#">Design</a>
-                            <a className="p-2 link-secondary" href="#">Culture</a>
-                            <a className="p-2 link-secondary" href="#">Business</a>
-                            <a className="p-2 link-secondary" href="#">Politics</a>
-                            <a className="p-2 link-secondary" href="#">Opinion</a>
-                            <a className="p-2 link-secondary" href="#">Science</a>
-                            <a className="p-2 link-secondary" href="#">Health</a>
-                            <a className="p-2 link-secondary" href="#">Style</a>
-                            <a className="p-2 link-secondary" href="#">Travel</a>
+                            <Link className="p-2 link-secondary" to="/">World</Link>
+                            <Link className="p-2 link-secondary" to="/">U.S.</Link>
+                            <Link className="p-2 link-secondary" to="/">Technology</Link>
+                            <Link className="p-2 link-secondary" to="/">Design</Link>
+                            <Link className="p-2 link-secondary" to="/">Culture</Link>
+                            <Link className="p-2 link-secondary" to="/">Business</Link>
+                            <Link className="p-2 link-secondary" to="/">Politics</Link>
+                            <Link className="p-2 link-secondary" to="/">Opinion</Link>
+                            <Link className="p-2 link-secondary" to="/">Science</Link>
+                            <Link className="p-2 link-secondary" to="/">Health</Link>
+                            <Link className="p-2 link-secondary" to="/">Style</Link>
+                            <Link className="p-2 link-secondary" to="/">Travel</Link>
                         </nav>
                     </div>
                 </div>
@@ -35,7 +36,7 @@ const Blog = () => {
                             <h1 className="display-4 fst-italic">Title of a longer featured blog post</h1>
                             <p className="lead my-3">Multiple lines of text that form the lede, informing new readers
                                 quickly and efficiently about what’s most interesting in this post’s contents.</p>
-                            <p className="lead mb-0"><a href="#" className="text-white fw-bold">Continue reading...</a></p>
+                            <p className="lead mb-0"><Link to="/" className="text-white fw-bold">Continue reading...</Link></p>
                         </div>
                     </div>
 
@@ -48,7 +49,7 @@ const Blog = () => {
                                     <div className="mb-1 text-muted">Nov 12</div>
                                     <p className="card-text mb-auto">This is a wider card with supporting text below as a
                                         natural lead-in to additional content.</p>
-                                    <a href="#" className="stretched-link">Continue reading</a>
+                                    <Link to="#" className="stretched-link">Continue reading</Link>
                                 </div>
                                 <div className="col-auto d-none d-lg-block">
                                     <svg className="bd-placeholder-img" width="200" height="250"
@@ -69,7 +70,7 @@ const Blog = () => {
                                     <div className="mb-1 text-muted">Nov 11</div>
                                     <p className="mb-auto">This is a wider card with supporting text below as a natural
                                         lead-in to additional content.</p>
-                                    <a href="#" className="stretched-link">Continue reading</a>
+                                    <Link to="#" className="stretched-link">Continue reading</Link>
                                 </div>
                                 <div className="col-auto d-none d-lg-block">
                                     <svg className="bd-placeholder-img" width="200" height="250"
@@ -92,7 +93,7 @@ const Blog = () => {
 
                             <article className="blog-post">
                                 <h2 className="blog-post-title">Sample blog post</h2>
-                                <p className="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+                                <p className="blog-post-meta">January 1, 2021 by <Link to={"/"}>Mark</Link></p>
 
                                 <p>This blog post shows a few different types of content that’s supported and styled with
                                     Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as
@@ -137,8 +138,8 @@ const Blog = () => {
                                 </dl>
                                 <h2>Inline HTML elements</h2>
                                 <p>HTML defines a long list of available inline tags, a complete list of which can be
-                                    found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla
-                                        Developer Network</a>.</p>
+                                    found on the <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla
+                                        Developer Network</Link>.</p>
                                 <ul>
                                     <li><strong>To bold text</strong>, use <code
                                         className="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.
@@ -186,7 +187,7 @@ const Blog = () => {
 
                             <article className="blog-post">
                                 <h2 className="blog-post-title">Another blog post</h2>
-                                <p className="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
+                                <p className="blog-post-meta">December 23, 2020 by <Link to={"/"}>Jacob</Link></p>
 
                                 <p>This is some additional paragraph placeholder content. It has been written to fill the
                                     available space and show how a longer snippet of text affects the surrounding content.
@@ -242,7 +243,7 @@ const Blog = () => {
 
                             <article className="blog-post">
                                 <h2 className="blog-post-title">New feature</h2>
-                                <p className="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+                                <p className="blog-post-meta">December 14, 2020 by <Link to="#">Chris</Link></p>
 
                                 <p>This is some additional paragraph placeholder content. It has been written to fill the
                                     available space and show how a longer snippet of text affects the surrounding content.
@@ -258,8 +259,8 @@ const Blog = () => {
                             </article>
 
                             <nav className="blog-pagination" aria-label="Pagination">
-                                <a className="btn btn-outline-primary" href="#">Older</a>
-                                <a className="btn btn-outline-secondary disabled">Newer</a>
+                                <Link className="btn btn-outline-primary" to="/">Older</Link>
+                                <Link className="btn btn-outline-secondary disabled">Newer</Link>
                             </nav>
 
                         </div>
@@ -275,27 +276,27 @@ const Blog = () => {
                                 <div className="p-4">
                                     <h4 className="fst-italic">Archives</h4>
                                     <ol className="list-unstyled mb-0">
-                                        <li><a href="#">March 2021</a></li>
-                                        <li><a href="#">February 2021</a></li>
-                                        <li><a href="#">January 2021</a></li>
-                                        <li><a href="#">December 2020</a></li>
-                                        <li><a href="#">November 2020</a></li>
-                                        <li><a href="#">October 2020</a></li>
-                                        <li><a href="#">September 2020</a></li>
-                                        <li><a href="#">August 2020</a></li>
-                                        <li><a href="#">July 2020</a></li>
-                                        <li><a href="#">June 2020</a></li>
-                                        <li><a href="#">May 2020</a></li>
-                                        <li><a href="#">April 2020</a></li>
+                                        <li><Link to={"/"}>March 2021</Link></li>
+                                        <li><Link to={"/"}>February 2021</Link></li>
+                                        <li><Link to={"/"}>January 2021</Link></li>
+                                        <li><Link to={"/"}>December 2020</Link></li>
+                                        <li><Link to={"/"}>November 2020</Link></li>
+                                        <li><Link to={"/"}>October 2020</Link></li>
+                                        <li><Link to={"/"}>September 2020</Link></li>
+                                        <li><Link to={"/"}>August 2020</Link></li>
+                                        <li><Link to={"/"}>July 2020</Link></li>
+                                        <li><Link to={"/"}>June 2020</Link></li>
+                                        <li><Link to={"/"}>May 2020</Link></li>
+                                        <li><Link to={"/"}>April 2020</Link></li>
                                     </ol>
                                 </div>
 
                                 <div className="p-4">
                                     <h4 className="fst-italic">Elsewhere</h4>
                                     <ol className="list-unstyled">
-                                        <li><a href="#">GitHub</a></li>
-                                        <li><a href="#">Twitter</a></li>
-                                        <li><a href="#">Facebook</a></li>
+                                        <li><Link to={"/"}>GitHub</Link></li>
+                                        <li><Link to={"/"}>Twitter</Link></li>
+                                        <li><Link to={"/"}>Facebook</Link></li>
                                     </ol>
                                 </div>
                             </div>

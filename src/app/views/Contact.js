@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import LayoutSite from "../layouts/LayoutSite";
 import '../../assets/css/Contact.css';
 import Container from "../components/Container";
+import {Link} from "react-router-dom";
 
 const Contact = () => {
     const [state] = useState({
@@ -22,7 +23,7 @@ const Contact = () => {
                         <div className="col-lg-10 col-xl-8">
                             <div className="row">
                                 <div className="col-lg-7">
-                                    <form id="contact-form" className="form-horizontal" role="form">
+                                    <form id="contact-form" className="form-horizontal">
                                         <div className="form-floating mb-3">
                                             <input type="name" className="form-control" id="name" placeholder="Your name" autoComplete="off"/>
                                             <label htmlFor="name">Your Name</label>
@@ -67,17 +68,17 @@ const Contact = () => {
                                         </ul>
                                         <hr/>
                                         <ul className="social-media-list">
-                                            <li><a href="#" target="_blank" className="contact-icon">
-                                                <i className="fa fa-github" aria-hidden="true"/></a>
+                                            <li><Link to="/" target="_blank" className="contact-icon">
+                                                <i className="fa fa-github" aria-hidden="true"/></Link>
                                             </li>
-                                            <li><a href="#" target="_blank" className="contact-icon">
-                                                <i className="fa fa-codepen" aria-hidden="true"/></a>
+                                            <li><Link to="/" target="_blank" className="contact-icon">
+                                                <i className="fa fa-codepen" aria-hidden="true"/></Link>
                                             </li>
-                                            <li><a href="#" target="_blank" className="contact-icon">
-                                                <i className="fa fa-twitter" aria-hidden="true"/></a>
+                                            <li><Link to="/" target="_blank" className="contact-icon">
+                                                <i className="fa fa-twitter" aria-hidden="true"/></Link>
                                             </li>
-                                            <li><a href="#" target="_blank" className="contact-icon">
-                                                <i className="fa fa-instagram" aria-hidden="true"/></a>
+                                            <li><Link to="/" target="_blank" className="contact-icon">
+                                                <i className="fa fa-instagram" aria-hidden="true"/></Link>
                                             </li>
                                         </ul>
                                     </div>

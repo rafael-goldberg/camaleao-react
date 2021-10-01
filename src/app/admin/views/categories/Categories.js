@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import ModalDefault from "../../../components/ModalDefault";
-import * as VscIcons from "react-icons/vsc";
 import CategoriesList from "./CategoriesList";
 import CategoryForm from "./CategoryForm";
 

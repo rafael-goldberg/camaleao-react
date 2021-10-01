@@ -1,6 +1,5 @@
 import React, {lazy, Suspense} from "react";
 import {Switch, Route} from "react-router-dom";
-import Blog from "../views/Blog";
 
 // Components
 const PrivateRoute = lazy(() => {
@@ -52,7 +51,7 @@ const Shopping = lazy(() => {
         setTimeout(() => resolve(import("../views/Shopping")), 1200);
     });
 });
-const blog = lazy(() => {
+const Blog = lazy(() => {
     return new Promise(resolve => {
         setTimeout(() => resolve(import("../views/Blog")), 1200);
     });

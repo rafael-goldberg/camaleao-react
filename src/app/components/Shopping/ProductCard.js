@@ -1,15 +1,13 @@
-import React, {Fragment, useContext, useState} from "react";
+import React, {Fragment, useState} from "react";
 import '../../../assets/css/ProductCard.css';
 import ReactTooltip from 'react-tooltip';
 import * as ImIcons from 'react-icons/im';
 import ImageGallery from 'react-image-gallery';
-import {AuthContext} from "../../helpers/AuthContext";
 import { connect } from "react-redux";
 import { addProductCart, updateCart } from "../../actions/cartAction";
 
 
 const ProductCard = (props) => {
-    const {authState} = useContext(AuthContext);
     const {image, title, rating, price, old_price, quantity, description} = props.product;
     const [state, setState] = useState({
         modal: false,

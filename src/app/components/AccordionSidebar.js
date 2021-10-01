@@ -1,4 +1,5 @@
 import React, {useRef, useState} from "react";
+import {Link} from "react-router-dom";
 
 function Chevron(props) {
     return (
@@ -27,10 +28,10 @@ const AccordionSidebar = (props) => {
 
     return(
         <div className="accordion__section">
-            <a href='#' data-toggle="collapse" className={`pointer ${setActive}`} onClick={toggleAccordion}>
+            <Link to='/' data-toggle="collapse" className={`pointer ${setActive}`} onClick={toggleAccordion}>
                 {props.title ? props.title : 'Dropdown'}
                 <Chevron className={`${setRotate} float-end me-2`} width={8} fill={"#777"} />
-            </a>
+            </Link>
             <div ref={content} style={{ maxHeight: `${setHeight}` }} className="accordion__content">
                 {props.children}
             </div>
