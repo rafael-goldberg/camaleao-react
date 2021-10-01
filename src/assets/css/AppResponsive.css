@@ -1,0 +1,104 @@
+@media only screen and (max-width: 320px) {
+    /* Layout - background-image */
+    #layoutSite.layout-site-bg #layoutSiteBg .card {
+        height: 58.5vh;
+    }
+    #layoutSite.layout-site-bg .footer {
+        background-color: var(--color-muted);
+        position: fixed;
+        width: 100%;
+        bottom: -24px;
+    }
+    /* ./END Layout - background-image */
+    #productCard .modal-container {
+        width: 90% !important;
+        left: 5% !important;
+    }
+}
+@media only screen and (min-width: 320.1px) and (max-width: 375px) {
+    /* Layout - background-image */
+    #layoutSite.layout-site-bg #layoutSiteBg .card {
+        height: 59vh;
+    }
+    #layoutSite.layout-site-bg .footer {
+        background-color: var(--color-muted);
+        position: fixed;
+        width: 100%;
+        bottom: -24px;
+    }
+    /* ./END Layout - background-image */
+    #productCard .modal-container {
+        width: 90% !important;
+        left: 5% !important;
+    }
+}
+@media only screen and (min-width: 375.1px) and (max-width: 425px) {
+    /* Layout - background-image */
+    #layoutSite.layout-site-bg #layoutSiteBg .card {
+        height: 63vh;
+    }
+    #layoutSite.layout-site-bg .footer {
+        background-color: var(--color-muted);
+        position: fixed;
+        width: 100%;
+        bottom: -24px;
+    }
+    /* ./END Layout - background-image */
+    #productCard .modal-container {
+        width: 90% !important;
+        left: 5% !important;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 1044px) {
+    .form-div {
+        margin-left: -20px;
+    }
+}
+
+@media only screen and (min-width: 425.1px) and (max-width: 768px) {
+    /* Layout - background-image */
+    #layoutSite.layout-site-bg #layoutSiteBg .card {
+        height: 63vh;
+    }
+    #layoutSite.layout-site-bg .footer {
+        background-color: var(--color-muted);
+        position: fixed;
+        width: 100%;
+        bottom: -24px;
+    }
+    /* ./END Layout - background-image */
+    #productCard .modal-container {
+        width: 90% !important;
+        left: 5% !important;
+    }
+}
+@media only screen and (min-width: 768.1px) and (max-width: 1024px) {
+    /* Layout - background-image */
+    #layoutSite.layout-site-bg #layoutSiteBg .card {
+        height: 72vh;
+    }
+    #layoutSite.layout-site-bg .footer {
+        background-color: var(--color-muted);
+        position: fixed;
+        width: 100%;
+        bottom: -24px;
+    }
+    /* ./END Layout - background-image */
+    #productCard .modal-container {
+        width: 90% !important;
+        left: 5% !important;
+    }
+}
+@media only screen and (min-width: 1024.1px) and (max-width: 1440px) {
+    /* Layout - background-image */
+    #layoutSite.layout-site-bg #layoutSiteBg .card {
+        height: 72vh;
+    }
+    #layoutSite.layout-site-bg .footer {
+        background-color: var(--color-muted);
+        position: fixed;
+        width: 100%;
+        bottom: -24px;
+    }
+    /* ./END Layout - background-image */
+}

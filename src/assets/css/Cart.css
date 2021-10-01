@@ -1,0 +1,20 @@
+#cart .cartItem .thumbnail {
+    max-width: 70px;
+}
+#cart .cartItem .thumbnail-bg {
+    display: none;
+ }
+
+
+
+#cart .accordion-demo .accordion-custom i, .accordion-demo .accordion-custom span {
+    vertical-align: middle;
+}
+#cart .accordion-demo .accordion-custom span {
+    margin: 0 .5rem;
+}
+#cart .accordion-demo .p-accordion p {
+    line-height: 1.5;
+    margin: 0;
+}
+

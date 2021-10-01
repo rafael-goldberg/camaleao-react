@@ -1,0 +1,123 @@
+#productCard .title {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#productCard .extraClass {
+    font-size: 18px !important;
+    pointer-events: auto !important;
+}
+#productCard .extraClass:hover {
+     visibility: visible !important;
+     opacity: 1 !important;
+ }
+
+#productCard .modal {
+    background: rgba(0, 0, 0, 0.6);
+}
+#productCard .modal-container {
+    position: absolute;
+    width: 70%;
+    background: #ffffff;
+    left: 15%;
+    top: 5%;
+    padding: 20px;
+    overflow-y: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+
+/* DETAILS */
+#productCard img {
+    max-width: 100% !important;
+}
+#productCard .product-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#productCard .product-title,
+#productCard .price,
+#productCard .colors {
+    font-weight: bold;
+}
+#productCard .bi-star-fill {
+    color: #ff9f1a;
+}
+#productCard .price span {
+    color: var(--bs-primary);
+}
+#productCard .product-title,
+#productCard .product-description,
+#productCard .price,
+#productCard .vote {
+    margin-bottom: 15px;
+}
+#productCard .product-title {
+    margin-top: 0;
+}
+#productCard .color {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    height: 2em;
+    width: 2em;
+    border-radius: 2px;
+}
+#productCard .color:first-of-type {
+    margin-left: 20px;
+}
+#productCard .orange {
+    background: #ff9f1a;
+}
+#productCard .green {
+    background: #85ad00;
+}
+#productCard .blue {
+    background: #0076ad;
+}
+#productCard .modal-close {
+    font-size: 14px;
+    background: var(--color-muted-dark);
+    padding: .6em 1em;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease;
+    border-radius: 4px;
+}
+#productCard .add-to-cart {
+    font-size: 14px;
+    background: var(--bs-success);
+    padding: .6em 1em;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease;
+}
+#productCard .like {
+    font-size: 14px;
+    background: var(--bs-danger);
+    padding: .6em 1em;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease;
+}
+#productCard .modal-close:hover {
+    background: var(--color-graphite);
+    color: #fff;
+}
+#productCard .add-to-cart:hover {
+    background: rgba(14,79,49,1);
+    color: #fff;
+}
+#productCard .like:hover {
+    background: rgb(142, 31, 39);
+    color: #fff;
+}
